@@ -1,44 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mitrafan</title>
-  <style>
-    * { box-sizing: border-box; }
-    html { color-scheme: light; }
-    body {
-      margin: 0;
-      background: #f3f3f3;
-      color: #222;
-      font: 16px/1.45 Arial, Helvetica, sans-serif;
-    }
-    main {
-      max-width: 680px;
-      margin: 32px auto;
-      padding: 36px 40px 48px;
-      background: #fff;
-      border: 1px solid #ddd;
-    }
-    h1 {
-      margin: 0;
-      font-size: 28px;
-      font-weight: 700;
-      letter-spacing: 0;
-    }
-    .line {
-      margin: 6px 0 0;
-      color: #333;
-    }
-    .line { margin: 6px 0 0; color: #333; }
-    .intro { margin: 18px 0 0; }
-    a { color: #0645ad; }
-    h2 {
       margin: 26px 0 8px;
       font-size: 16px;
       font-weight: 700;
+      margin: 2.6rem 0 0.75rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #2c2b28;
+      color: #9a968c;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
     }
     p { margin: 0 0 8px; }
+    p { margin: 0 0 0.75rem; }
     ul {
       margin: 0;
       padding: 0;
@@ -52,26 +25,41 @@
         padding: 24px 16px 40px;
         border: 0;
       }
+    li { margin: 0.4rem 0; }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-top: 3rem;
+      border: 1px solid #2c2b28;
     }
     @media print {
       body { background: #fff; }
       main { margin: 0; border: 0; max-width: none; }
       a { color: #000; text-decoration: none; }
       a[href^="http"]::after { content: " (" attr(href) ")"; }
+    ::selection {
+      background: #3a4250;
+      color: #fff;
+    }
+    @media (max-width: 640px) {
+      main { padding: 40px 18px 72px; }
+      h1 { font-size: 28px; }
     }
   </style>
 </head>
 <body>
   <main>
     <h1>Mitrafan</h1>
-    <p class="line">17, Warsaw</p>
-    <p class="line"><a href="mailto:reborncodeveloper@gmail.com">reborncodeveloper@gmail.com</a></p>
     <p class="line">17, Warsaw | <a href="mailto:reborncodeveloper@gmail.com">reborncodeveloper@gmail.com</a></p>
-    <p style="margin-top: 18px">Student at Warsaw University of Technology (Politechnika Warszawska). No work experience yet. Looking for an internship, unpaid is fine. I learn fast.</p>
+    <h1>Mitrafan Patapovich</h1>
+    <p class="meta">17, Warsaw</p>
+    <p class="links">
+      <a href="https://github.com/reborncodeveloper">GitHub</a>
+      <a href="mailto:reborncodeveloper@gmail.com">reborncodeveloper@gmail.com</a>
+    </p>
     <p class="intro">Student at Warsaw University of Technology (Politechnika Warszawska). No work experience yet. Looking for an internship, unpaid is fine. I learn fast.</p>
     <h2>Education</h2>
-    <p>Warsaw University of Technology (Politechnika Warszawska)</p>
-    <p>Currently studying</p>
     <p>Warsaw University of Technology (Politechnika Warszawska) — currently studying</p>
     <h2>Skills</h2>
     <ul>
@@ -81,14 +69,25 @@
       <li>JavaScript: basics</li>
       <li>English: B2</li>
       <li>Typing: fast</li>
+      <li>Python additional useful skills: asyncio, multiprocessing, algorithms, DOP</li>
+      <li>Relational databases: PostgreSQL</li>
+      <li>Bash: basics</li>
+      <li>JavaScript, HTML, CSS, backend (Python): basics</li>
+      <li>Languages: English (B2), Russian (native), Polish (A2)</li>
+      <li>Other skills: fast typing</li>
     </ul>
     <h2>Projects</h2>
-    <p><a href="https://reborncompanyai.com/">Reborn Company AI</a> — site is currently down.</p>
-    <p>Another project — in development, no public link yet.</p>
     <ul>
       <li><a href="https://reborncompanyai.com/">Reborn Company AI</a> — site is currently down.</li>
       <li>Another project — in development, no public link yet.</li>
+      <li><a href="https://reborncompanyai.com/">Reborn Company AI</a> — created using AI technologies.</li>
+      <li>Other projects: at least 3 additional projects in a private repository.</li>
     </ul>
+    <h2>About me</h2>
+    <p>Student at Warsaw University of Technology (Politechnika Warszawska).</p>
+    <p>Fast learner and strong communicator, highly adaptable and open to various tasks.</p>
+    <p>Looking for a part-time internship or junior position that can be balanced with my studies.</p>
+    <img src="_.jpeg" alt="Demo">
   </main>
 </body>
 </html>
